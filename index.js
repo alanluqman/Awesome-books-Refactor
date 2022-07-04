@@ -1,5 +1,4 @@
 import * as navBtn from './modules/spa.js';
-import './modules/book.js';
 import { DateTime } from './modules/luxon.js';
 
 setInterval(() => {

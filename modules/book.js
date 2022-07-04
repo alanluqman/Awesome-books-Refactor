@@ -1,5 +1,5 @@
-const library = [];
-class BookList {
+export const library = [];
+export class BookList {
   constructor(title, author) {
     this.title = title;
     this.author = author;
