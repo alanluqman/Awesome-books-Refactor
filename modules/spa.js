@@ -1,7 +1,7 @@
-const pageTitle = document.querySelector('#pageTitle');
-const listView = document.querySelector('#listView');
-const newBookAdd = document.querySelector('#newBookAdd');
-const contactInfo = document.querySelector('#contactInfo');
+export const pageTitle = document.querySelector('#pageTitle');
+export const listView = document.querySelector('#listView');
+export const newBookAdd = document.querySelector('#newBookAdd');
+export const contactInfo = document.querySelector('#contactInfo');
 
 export function listBtn(btn1, btn2, btn3) {
   pageTitle.innerHTML = 'All awesome books';
