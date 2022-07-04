@@ -130,7 +130,13 @@ html {
 }
 
 .remove-btn {
+  cursor: pointer;
   padding: 0.5rem;
+  font-size: 1.5rem;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  background-color: ghostwhite;
+  transition: all 0.2s ease;
 }
 
 .remove-btn:hover {
