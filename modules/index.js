@@ -1,4 +1,4 @@
-import { listBtn as list, addNewBtn as addNew, contactUs as contact } from './modules/spa.js';
+import { listBtn as list, addNewBtn as addNew, contactUs as contact } from './spa.js';
 // import { DateTime } from './modules/luxon.js';
 
 // setInterval(() => {
