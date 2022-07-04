@@ -20,3 +20,4 @@ contactUs.addEventListener('click', () => {
   navBtn.contactUs(listBtn, addNewBtn, contactUs);
 });
 // first page load
+newBook();
