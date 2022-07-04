@@ -1,11 +1,12 @@
 import * as navBtn from './modules/spa.js';
-import './modules/book.js';
+import * as newBook from './modules/book.js';
 import { DateTime } from './modules/luxon.js';
 
 setInterval(() => {
   const date = DateTime.now();
   document.getElementById('date').innerHTML = date.toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
 }, 1000);
+
 
 const listBtn = document.querySelector('#list');
 const addNewBtn = document.querySelector('#addNew');
@@ -20,3 +21,5 @@ contactUs.addEventListener('click', () => {
   navBtn.contactUs(listBtn, addNewBtn, contactUs);
 });
 // first page load
+
+newBook ();
