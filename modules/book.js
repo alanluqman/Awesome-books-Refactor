@@ -92,3 +92,5 @@ add.addEventListener('click', () => {
   document.getElementById('title').value = '';
   document.getElementById('author').value = '';
 });
+
+export {};
