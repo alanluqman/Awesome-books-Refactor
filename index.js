@@ -1,5 +1,5 @@
 import * as navBtn from './modules/spa.js';
-import * as newBook from './modules/book.js';
+import './modules/book.js';
 import { DateTime } from './modules/luxon.js';
 
 setInterval(() => {
@@ -20,4 +20,3 @@ contactUs.addEventListener('click', () => {
   navBtn.contactUs(listBtn, addNewBtn, contactUs);
 });
 // first page load
-newBook();
