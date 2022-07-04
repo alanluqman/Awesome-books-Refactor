@@ -7,7 +7,6 @@ setInterval(() => {
   document.getElementById('date').innerHTML = date.toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
 }, 1000);
 
-
 const listBtn = document.querySelector('#list');
 const addNewBtn = document.querySelector('#addNew');
 const contactUs = document.querySelector('#contact');
@@ -22,4 +21,4 @@ contactUs.addEventListener('click', () => {
 });
 // first page load
 
-newBook ();
+newBook();
