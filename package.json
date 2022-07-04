@@ -1,0 +1,20 @@
+{
+  "name": "Awesome-books-Refactor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanluqman/Awesome-books-Refactor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alanluqman/Awesome-books-Refactor/issues"
+  },
+  "homepage": "https://github.com/alanluqman/Awesome-books-Refactor#readme"
+}
