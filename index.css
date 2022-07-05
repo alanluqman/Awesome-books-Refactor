@@ -1,0 +1,256 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+html {
+  font-size: 62.5%;
+  padding: 0.5rem;
+}
+
+/* nav bar */
+.nav-holder {
+  width: 100%;
+}
+
+.navigation {
+  max-width: 80rem;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  border: 2px solid black;
+  padding: 1rem;
+}
+
+.nav-logo {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-list-holder {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-list-holder .li:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+.nav-items {
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 0.5rem 1.5rem;
+  color: gray;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-items:hover {
+  color: orange;
+}
+
+.active {
+  color: black;
+  font-weight: bold;
+}
+
+/* content */
+.container {
+  text-align: center;
+  max-width: 80rem;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+.date-holder {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 5rem;
+  padding: 1rem;
+}
+
+.date {
+  font-size: 1.6rem;
+}
+
+.page-title {
+  font-size: 4rem;
+}
+
+.book-holder {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.book-list {
+  border: 2px solid black;
+  margin: 4rem 0;
+}
+
+.book-item {
+  padding: 0.5rem 1rem;
+  list-style-type: none;
+}
+
+.book-item:nth-child(odd) {
+  background-color: rgb(199, 199, 199);
+}
+
+.book-info-holder {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.book-title {
+  font-size: 1.6rem;
+}
+
+.book-author {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.btn-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.remove-btn {
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  background-color: ghostwhite;
+  transition: all 0.2s ease;
+}
+
+.remove-btn:hover {
+  color: red;
+}
+
+.separator-line {
+  width: 20%;
+  margin: 4rem auto;
+  background-color: black;
+}
+
+.add-book-text {
+  font-size: 1.6rem;
+  margin: 5rem 0;
+  text-align: left;
+}
+
+.contact-holder {
+  padding-left: 3rem;
+}
+
+.contact-items {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.form {
+  max-width: 30rem;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+
+.error-message {
+  color: red;
+  font-size: 1.5rem;
+}
+
+.add-btn {
+  padding: 0.5rem 2rem;
+  align-self: end;
+}
+
+.displayOff {
+  display: none;
+}
+
+.displayOn {
+  display: block;
+}
+
+/* popup message */
+.popup {
+  transition: all 0.5s ease-in;
+  max-width: 25rem;
+  background-color: aliceblue;
+  border-radius: 2rem;
+  padding: 2rem;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  bottom: -12rem;
+  display: none;
+}
+
+@keyframes addBookMessage {
+  from {
+    bottom: -12rem;
+    opacity: 0;
+  }
+
+  20% {
+    bottom: 0;
+    opacity: 1;
+  }
+
+  80% {
+    bottom: 0;
+    opacity: 1;
+  }
+
+  to {
+    bottom: -12rem;
+    opacity: 0;
+  }
+}
+
+.motion {
+  display: block;
+  animation-name: addBookMessage;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.popup-image {
+  color: aquamarine;
+  font-size: 4rem;
+}
+
+.popup-message {
+  font-size: 1.6rem;
+}
+
+/* footer */
+.footer {
+  position: absolute;
+  bottom: 1%;
+  margin-top: 2rem;
+}
